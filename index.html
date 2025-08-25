@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <meta charset="UTF-8" />
+      <meta name="description" content="simple student application in html" >
+      <meta name="keywords" content="application, student, university, form, al-ilm, certipicates, academics..." >
+        <head>
+           <title>Week 2 (Enhance HTML) Assignment</title> 
+        </head>
+        <body>
+          <main>
+        <section> 
+        <h1>Application Form for New Students</h1>
+        <h2>Who Are We At Al-Ilm University?</h2><br><br/>
+        <img src="https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8fDA%3D" alt="brown tall building for uni campus" width="470" height="300">
+        <img src="https://images.unsplash.com/photo-1619512673224-91cfb2688284?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8fDA%3D" alt="university campus trees" width="470" height="300">
+        <img src="https://plus.unsplash.com/premium_photo-1661308230300-4335e30c72ed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8fDA%3D" alt="multinational group" width="470" height="300">
+        <h4>The university at a glance.</h4><br><br/>
+        <video widths="800" height="300" controls>
+            <source src="https://cdn.pixabay.com/video/2025/08/08/296169_tiny.mp4" type="video/mp4">
+        </video><br><br/>
+        <p><b>Listen to the welcome speech from the vice-chancellor himself.</b></p><br><br/>
+        <audio controls>
+            <source src="music/beat.mp3" type="audio/mp4">
+             Your browser does not support the audio tag.
+        </audio><br><br/>
+        </section>
+
+        <section> 
+         <h2>Undergraduate Admission Application Form (2025/2026 Academic Session).</h2>
+         <p>All informations must be filled correctly with maximum concentration.</p>
+         <h3>Admission Requirements</h3>
+        <ul>
+          <li>Completed application form</li>
+          <li>Copies of academic certificates</li>
+          <li>Valid ID or Passport</li>
+          <li>Recent passport-sized photographs</li>
+        </ul>
+        </section>
+        <section>
+
+        <form action="#" method="post">
+            
+                <h2>Personal Information.</h2>
+                <label for="passport">Passport Photo:</label>
+                <input type="file" name="passport" id="passport" required>
+                <label for="appno">Application Number:</label>
+                <input type="text" id="appno" name="appno" value="UNI2025-00123" readonly><br><br/>
+                <label for="fname">FisrtName:</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your firstname..." width="100" required><br><br/> 
+                <label for="lname">LastName:</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your lastname..." required><br><br/>
+                <label for="othname">Other Name:</label>
+                <input type="text" name="othname" id="othname" placeholder="Other name..." required><br><br/>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="Male"required>Male 
+                <input type="radio" name="gender" value="Male" required>Female<br><br/>
+                <label for="marital status">Marital Status:</label>
+                <input type="radio" name="marital status" value="Single">Single
+                <input type="radio" name="marital status" value="Single">Married<br><br/>
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" name="dob" id="dob" required><br><br/>
+                <label for="nationality">Nationality:</label>
+                <select name="nationality">
+                    <option>Australia</option>
+                    <option>South Africa</option>
+                    <option>Nigeria</option>
+                    <option>United Emirate Arab(UEA)</option>
+                    <option>Kenya</option>
+                    <option>Eypgt</option>
+                    <option>Ghana</option>
+                    <option>Unite State Of Ameraica(USA)</option>
+                </select><br><br/>
+        </section>
+        <section>      
+              <h2>Account Details</h2>
+              <fieldset>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="E.g:Eni23"><br><br/>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br/>
+
+                <label for="confirm">Confirm Password:</label>
+                <input type="password" id="confirm" name="confirm" required><br><br/>
+               </fieldset>
+        </section>  
+        <section>          
+                <h2>Contact Information.</h2>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com" autocomplete="email" required><br><br/>
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" name="phonenumber" id="phonenumber" minlength="11" maxlength="15" autocomplete="phonenumber" required><br><br/>
+                <label for="address">Home Address:</label>
+                <textarea name="address" id="address" cols="40" rows="5"  placeholder="Home Address" autocomplete="address" required></textarea>
+        </section>
+        <section>      
+                <h2>Academic Information.</h2>
+                <fieldset>
+                    <legend>O'Level Result</legend>
+        <section>           
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                 <th>Subjects</th>
+                                 <th>Grades</th>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject1" placeholder="e.g. Mathematics" required></td>
+                              <td>
+                                 <select name="grade1" required>
+                                 <option value="">Select Grade</option>
+                                 <option>A1</option>
+                                 <option>B2</option>
+                                 <option>B3</option>
+                                 <option>C4</option>
+                                 <option>C5</option>
+                                 <option>C6</option>
+                                 <option>D7</option>
+                                 <option>E8</option>
+                                 <option>F9</option>
+                                 </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject2"  required></td>
+                              <td>
+                                 <select name="grade2" required>
+                                 <option value="">Select Grade</option>
+                                 <option>A1</option>
+                                 <option>B2</option>
+                                 <option>B3</option>
+                                 <option>C4</option>
+                                 <option>C5</option>
+                                 <option>C6</option>
+                                 <option>D7</option>
+                                 <option>E8</option>
+                                 <option>F9</option>
+                                 </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject3"  required></td>
+                              <td>
+                                 <select name="grade3" required>
+                                 <option value="">Select Grade</option>
+                                 <option>A1</option>
+                                 <option>B2</option>
+                                 <option>B3</option>
+                                 <option>C4</option>
+                                 <option>C5</option>
+                                 <option>C6</option>
+                                 <option>D7</option>
+                                 <option>E8</option>
+                                 <option>F9</option>
+                                 </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject4"  required></td>
+                              <td>
+                                 <select name="grade4" required>
+                                 <option value="">Select Grade</option>
+                                 <option>A1</option>
+                                 <option>B2</option>
+                                 <option>B3</option>
+                                 <option>C4</option>
+                                 <option>C5</option>
+                                 <option>C6</option>
+                                 <option>D7</option>
+                                 <option>E8</option>
+                                 <option>F9</option>
+                                 </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject5"  required></td>
+                              <td>
+                                 <select name="grade5" required>
+                                 <option value="">Select Grade</option>
+                                 <option>A1</option>
+                                 <option>B2</option>
+                                 <option>B3</option>
+                                 <option>C4</option>
+                                 <option>C5</option>
+                                 <option>C6</option>
+                                 <option>D7</option>
+                                 <option>E8</option>
+                                 <option>F9</option>
+                                 </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject6"  required></td>
+                              <td>
+                                 <select name="grade6" required>
+                                 <option value="">Select Grade</option>
+                                 <option>A1</option>
+                                 <option>B2</option>
+                                 <option>B3</option>
+                                 <option>C4</option>
+                                 <option>C5</option>
+                                 <option>C6</option>
+                                 <option>D7</option>
+                                 <option>E8</option>
+                                 <option>F9</option>
+                                 </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject7"  required></td>
+                              <td>
+                                 <select name="grade7" required>
+                                 <option value="">Select Grade</option>
+                                 <option>A1</option>
+                                 <option>B2</option>
+                                 <option>B3</option>
+                                 <option>C4</option>
+                                 <option>C5</option>
+                                 <option>C6</option>
+                                 <option>D7</option>
+                                 <option>E8</option>
+                                 <option>F9</option>
+                                 </select>
+                              </td>
+                            </tr>
+                            </tr>
+                        </thead>
+                    </table>
+                </fieldset><br><br/>
+              </section> 
+                <fieldset>
+                    <legend>Jamb Result</legend>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                 <th>Subjects</th>
+                                 <th>Grades</th>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject1" placeholder="e.g. Mathematics" required></td>
+                              <td>
+                                 <input type="number" name="grade1"  placeholder="e.g 100" min="0" max="100" required></td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject1"  required></td>
+                              <td>
+                                 <input type="number" name="grade1" min="0" max="100"  required></td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject1" required></td>
+                              <td>
+                                 <input type="number" name="grade1" min="0" max="100"  required></td>
+                            </tr>
+                            <tr>
+                              <td><input type="text" name="subject1" required></td>
+                              <td>
+                              <input type="number" name="grade1" min="0" max="100"  required></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </fieldset> 
+              </section> 
+              <section> 
+                    <h2>Course Of Study</h2>
+                    <label for="falculty">Select Faculty</label> 
+                    <select name="faculty">
+                    <option>Faculty of science</option>
+                    <option>Faculty of engineering</option>
+                    <option>Faculty of medicine</option>
+                    <option>Faculty of social science</option>
+                    <option>Faculty of art</option>
+                    </select><br><br/>
+            </section> 
+            <section>       
+                    <label for="preferred course">Preferred Course:</label>
+                    <textarea name="preferred course" id="preferred course"    cols="20"   rows="2" required></textarea><br><br/>
+                    <label for="declare">Declaration:</label>
+                    <input type="radio" name="declare" value="declare" required>I hereby declare that all the information 
+                    provided above is true and correct. I understand that any false information may lead to disqualification.<br><br/>
+                    <button type="submit">Submit Application</button>
+            </section>
+          </main>
+         <footer>
+             <p>&copy; 2025 Copyright: Modinat Abdullateef</p>
+         </footer>
+        </body>           
+      </form>
+    </body>
+  </html>
